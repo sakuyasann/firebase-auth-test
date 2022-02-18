@@ -1,0 +1,10 @@
+version: '3'
+services:
+  node:
+    image: node:16-alpine3.11
+    ports:
+      - 3983:3000
+    volumes:
+      - ./app:/usr/src/app
+    tty: true
+    working_dir: /usr/src/app
